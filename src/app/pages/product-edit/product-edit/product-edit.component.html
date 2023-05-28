@@ -1,0 +1,10 @@
+<form action="" (ngSubmit)="onHandleSubmit()">
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="product.name" name="name">
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="product.price" name="price">
+    </div>
+    {{product|json}}
+    <button type="submit">Sua</button>
+</form>
